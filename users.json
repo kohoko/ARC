@@ -1,0 +1,14 @@
+[
+  {
+    "id": "itclubugss",
+    "username": "itclub",
+    "password": "itclub.ugss",
+    "role": "Staff"
+  },
+  {
+    "id": "Uniglobe Admin",
+    "username": "ugadmin",
+    "password": "adminugss",
+    "role": "admin"
+  }
+]
