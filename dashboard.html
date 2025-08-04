@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="dash.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+  <aside class="sidebar">
+    <img src="logo.png" alt="Logo" class="logo" />
+    <nav>
+      <a href="#grades"><i class="fas fa-book"></i> Grades</a>
+      <a href="#calendar"><i class="fas fa-calendar"></i> Calendar</a>
+      <a href="#attendance"><i class="fas fa-user-check"></i> Attendance</a>
+      <a href="#resources"><i class="fas fa-folder"></i> Resources</a>
+      <a href="#" onclick="logout()"><i class="fas fa-sign-out-alt"></i> Logout</a>
+    </nav>
+  </aside>
+
+  <main>
+    <header>
+      <div class="profile">
+        <img src="" alt="Profile" id="profilePhoto" />
+        <div>
+          <h1 id="welcomeText"></h1>
+          <p><span id="userId"></span> | <span id="userRole"></span></p>
+        </div>
+      </div>
+    </header>
+
+ <section id="calendar">
+      <h2>Calendar</h2>
+      <iframe src="https://calendar.google.com/calendar/embed?src=your_calendar_id&ctz=Asia%2FKathmandu" width="100%" height="400" style="border: none;"></iframe>
+    </section>
+
+    <section id="grades" class="student-only">
+      <h2>Grades</h2>
+      <table>
+        <thead><tr><th>Subject</th><th>Grade</th></tr></thead>
+        <tbody id="gradesTable"></tbody>
+      </table>
+    </section>
+
+    <section id="attendance" class="student-only">
+      <h2>Attendance</h2>
+      <p>Attendance: <strong id="attendanceValue">90%</strong></p>
+    </section>
+
+    <section id="resources">
+      <h2>Resources</h2>
+      <ul>
+        <li>Library Portal</li>
+        <li>Assignment Submissions</li>
+        <li>Exam Schedule</li>
+      </ul>
+    </section>
+
+    <section id="adminUsers" class="admin-only">
+      <h2>All Students</h2>
+      <div class="user-list" id="userList"></div>
+    </section>
+
+    <footer>
+      <p>© 2025 Uniglobe College. All rights reserved.</p>
+    </footer>
+  </main>
+
+  <script src="dash.js"></script>
+</body>
+</html>

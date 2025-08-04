@@ -1,0 +1,89 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+}
+
+.sidebar {
+  width: 220px;
+  background: #667eea;
+  color: white;
+  height: 100vh;
+  padding: 1rem;
+}
+
+.sidebar .logo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sidebar nav a {
+  display: block;
+  color: white;
+  margin: 1rem 0;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+main {
+  flex: 1;
+  padding: 2rem;
+  background: #f4f4f4;
+}
+
+header .profile {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+header img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+section {
+  background: white;
+  padding: 1rem;
+  margin: 1.5rem 0;
+  border-radius: 1rem;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 0.75rem;
+  text-align: center;
+}
+
+.user-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.user-list .user-card {
+  background: #eef;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  flex: 1 1 200px;
+  text-align: center;
+}
+.user-card img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}

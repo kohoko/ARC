@@ -1,0 +1,43 @@
+{
+  "students": [
+     {
+      "username": "prayatna",
+      "password": "1234",
+      "name": "Prayatna Pokhrel",
+      "id": "UG2025",
+      "role": "Student",
+      "photo": "prayatna.jpg",
+      "grades": [
+        { "subject": "Math", "grade": "A" },
+        { "subject": "Computer", "grade": "A+" },
+        { "subject": "English", "grade": "A+" },
+        { "subject": "Chemistry", "grade": "B+" },
+        { "subject": "Physics", "grade": "B+" },
+        { "subject": "Nepali", "grade": "A" }
+  ]},
+
+  {
+      "username": "utsav",
+      "password": "1234",
+      "name": "Utasv Joshi",
+      "id": "UG2025",
+      "role": "Student",
+      "photo": "utsav.jpg",
+      "grades": [
+        { "subject": "Math", "grade": "B" },
+        { "subject": "Computer", "grade": "A+" },
+        { "subject": "English", "grade": "A" },
+        { "subject": "Chemistry", "grade": "B" },
+        { "subject": "Physics", "grade": "B" },
+        { "subject": "Nepali", "grade": "C+" }
+  ]}
+  ],
+  "admins": [
+    {
+      "username": "admin",
+      "password": "admin123",
+      "name": "Administrator",
+      "role": "Admin"
+    }
+  ]
+}
